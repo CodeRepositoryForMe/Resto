@@ -10,7 +10,6 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
   styleUrls: ['./recipe-detail.component.css']
 })
 export class RecipeDetailComponent implements OnInit {
-  
   // @Input() recipe : Recipe;  // Comment as routing works 
   
   recipe : Recipe;
@@ -38,7 +37,7 @@ export class RecipeDetailComponent implements OnInit {
   }
 
   onEditRecipe(){
-    // check why it is not working 
+    // check why it is not working, as per command it works fine  
     //this.router.navigate(['edit',{relativeTo: this.route}]);
     this.router.navigate(['../',this.id,'edit'],{relativeTo: this.route});
   }
